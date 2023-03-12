@@ -20,9 +20,38 @@ console.log("country"); //string display
 //variables that are numbers
 //combine multiple variables in the consolelog
 //boolean variable that contains either value true or false
+//undefined  variable has been declared but has not yet been assigned a value
+//null data types is an object
 
-let county = 'Nairobi';
-let year = 2023
-let nightime = false;
+let county = 'Nairobi'; //string
+let year = 2023 //integer
+let nightime = false; //boolean
+let n; //undefined
+let x = null;
 
-console.log(county, year, nightime);
+console.log(county, year, nightime, n, x);
+
+typeof undefined;
+//undefined
+typeof null;
+//object
+
+// demonstration of arithmetic operations using undefined and null
+undefined + 1;
+// NaN
+null + 1;
+// 1 
+
+//exercise 4
+let greeting = 'Hello my name is';
+myname = 'Brian' //redeclaration of variables
+myname += ' ' + 'mwirigi'
+let lastname = 'maingi';
+fullname = myname + ' ' + lastname; //construct a variable with other variables
+let str = 'And i have';
+let apples = 40;
+apples = apples + 5; //redeclaring variable
+apples += 7;
+let end = 'apples';
+
+console.log(greeting, fullname, str, apples, end);
