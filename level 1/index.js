@@ -52,6 +52,7 @@ let str = 'And i have';
 let apples = 40;
 apples = apples + 5; //redeclaring variable
 apples += 7;
+apples++;
 let end = 'apples';
 
 console.log(greeting, fullname, str, apples, end);
