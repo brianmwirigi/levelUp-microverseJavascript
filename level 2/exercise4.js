@@ -1,6 +1,7 @@
 //while loop
-let i = 0;
-while (i < 18) {
+let i = 2; // variable declared outside loop
+while (i <= 9) {
+    i++; //increment can me movied start or end of block
     console.log(i);
     i++;
 } 
