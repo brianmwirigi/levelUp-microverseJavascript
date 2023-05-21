@@ -27,6 +27,6 @@ function convertCtoF(celsius) {
     return fehrenheit;
 
 }
-let result1 = convertCtoF(30);
+let result1 = convertCtoF(10);
 
 console.log(result1);
