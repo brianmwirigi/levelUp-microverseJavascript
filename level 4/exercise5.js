@@ -7,4 +7,18 @@ function getIndexToInsert(arr, num) {
     return arr.length
 }
 
-console.log(getIndexToInsert([10, 20, 30, 40, 50, 60], 35))
+console.log(getIndexToInsert([10, 20, 30, 40, 50, 60], 35));
+
+//without sorting
+function getIndexToInsert1(arr, num) {
+    let belong = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < num) {
+            belong++;
+        }
+
+    }
+    return belong;
+}
+
+console.log(getIndexToInsert1([2, , 3, 4, 4, 5, 6, 6, 3,], 4));
