@@ -14,7 +14,7 @@ console.log(reverseString("hello"));
 //solution 2
 function reverseString1(string1) {
     let reverseString01 = "";
-    for (let i = string1.length - 1; i >= 0; i--) { //starting at the last character of the string paassed to the function
+    for (let i = string1.length - 1; i >= 0; i--) { //starting at the last character of the string paassed to the function using string.length -1
         reverseString01 += string1[i]; //a new string is built
     }
     return reverseString01;
