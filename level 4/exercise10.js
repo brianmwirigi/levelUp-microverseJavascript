@@ -11,10 +11,23 @@
 
 function pairElement(str) {
     let output = [];
-    for (let i = 0; str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
+        //cases subatring go here and can use if/then statement
+        if (str[i] === "A") {
+            output.push(["A", "T"])
+        };
+        if (str[i] === "T") {
+            output.push(["T", "A"])
+        };
+        if (str[i] === "G") {
+            output.push(["G", "C"])
+        };
+        if (str[i] === "C") {
+            output.push(["C", "G"])
+        };
         console.log(str[i]);
     }
-    return str;
+    return output;
 }
 console.log(pairElement("GCG"));
 console.log(pairElement("ATCGA"));
