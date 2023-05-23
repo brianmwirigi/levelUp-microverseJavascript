@@ -31,3 +31,30 @@ function pairElement(str) {
 }
 console.log(pairElement("GCG"));
 console.log(pairElement("ATCGA"));
+
+//second solution
+function pairElement(str) {
+    //function to match each character with the base
+    const matchWithBasePair = function (char) {
+        switch (char) {
+            case "A":
+                return ["A", "T"];
+            case "T":
+                return ["T", "A"];
+            case "C":
+                return ["C", "G"];
+            case "G":
+                return ["G", "C"];
+        }
+    };
+    //find pair for every character in the string
+    //empyy array uses the matchWithBAsePair function to push the right values to the array and return them
+    const pairs = [];
+    for (let i = 0; i < str.length; i++) {
+        pairs.push(matchWithBasePair(str[i]));
+    }
+    return pairs;
+
+}
+
+console.log(pairElement("GCG"));
