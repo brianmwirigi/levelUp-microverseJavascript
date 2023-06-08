@@ -5,6 +5,8 @@
  * function protype - int solveMeFirst(int a, int b);
  *
  */ 
+a = 2;
+b = 3;
 function solveMeFirst(a, b) {
     return a + b;
 }
@@ -16,6 +18,8 @@ function main() {
     var result = solveMeFirst(a, b);
     console.log(result);
 }
+
+console.log(solveMeFirst(a, b));
 /**
  * given an  arrray of integers, find sum of its elements
  * example array ar =[1,2,3,4] , 1+2+3+4 = 10 therefore returning 6
@@ -24,6 +28,7 @@ function main() {
  * constraints 0 < n, ar[i]<=1000
  * 
  */
+ar = [1, 2, 3, 4, 5, 65];
 function simpleArraySum(ar) {
     //for loop
     let sum = 0; //initialize a sum
@@ -32,10 +37,11 @@ function simpleArraySum(ar) {
     }
     return sum;
 }
+console.log(simpleArraySum(ar));
 
 /**
  * compare the triplets
- * alice = [1,2,3]
+ * alice = [1,2,3 ]
  * bob = [3,2,1]
  */
 var a = [17, 28, 30];
@@ -74,5 +80,6 @@ console.log(compareTriplets(a, b));
  * palindrome -  a word or phrase or sequence that reads the same backwards or forwards eg wow, madam ,nurses run
  * anagram - a word or phrase made by transponding the letters of another word or phrase.eg the word secure is an anagram of rescue
  */
+//an array is an object
 
-//a very big sum
+//a very big sum #challenge
